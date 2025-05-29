@@ -11,3 +11,15 @@ updates:
       prefix: "fix"
       include: "scope"
     security-updates: true
+
+
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+  - package-ecosystem: "nuget"
+    directory: "/code/"
+    schedule:
+      interval: "weekly"
