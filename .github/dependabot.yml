@@ -1,6 +1,13 @@
 version: 2
 updates:
-  - package-ecosystem: "pip"
-    directory: "/"
+  - package-ecosystem: "npm" 
+    directory: "/"           
     schedule:
-      interval: "weekly"
+      interval: "daily"    
+    open-pull-requests-limit: 5
+    allow:
+      - dependency-type: "direct"
+    commit-message:
+      prefix: "fix"
+      include: "scope"
+    security-updates: true
